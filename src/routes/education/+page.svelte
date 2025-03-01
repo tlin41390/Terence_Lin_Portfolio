@@ -4,7 +4,7 @@
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import { getAssetURL } from '$lib/data/assets';
-	import {color } from '$lib/utils/colors';
+	import {convertNamedToHexColor} from '$lib/utils/colors';
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
 	import { computeExactDuration, getTimeDiff } from '$lib/utils';
@@ -52,7 +52,7 @@
 						<UIcon icon="i-carbon-condition-point" />
 					</div>
 					<div class="col flex-1 items-stretch">
-						<Card color={color (education.color)}>
+						<Card color={convertNamedToHexColor (education.color)}>
 							
 							<div class="flex-1 col gap-2 items-stretch">
 								<img
