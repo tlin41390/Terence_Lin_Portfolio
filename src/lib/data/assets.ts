@@ -9,6 +9,8 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	AWS: a('aws.svg'),
+	USFCA: a('usfca_logo.png'),
+	SCU: a('scu_logo.png'),
 	Bootstrap: a('bootstrap.svg'),
 	C: a('c.svg'),
 	Cpp: a('cpp.svg'),

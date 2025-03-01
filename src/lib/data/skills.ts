@@ -44,8 +44,17 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'c',
+		color: 'skyblue',
+		description:
+			'I have hands-on experience with C, having worked on several large projects that deepened my understanding of system-level programming. One of the key projects I developed was a memory allocator, which involved intricate knowledge of dynamic memory allocation techniques. Additionally, I created a program capable of detecting network compression among different virtual machines (VMs), giving me experience with low-level networking concepts. I also worked within the xv6 kernel, which allowed me to explore operating system principles and gain deeper insights into how kernels manage resources. My passion for dynamic memory allocation continues to drive my interest in system optimization and resource management.',
+		logo: Assets.C,
+		name: 'C',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'java',
-		color: 'white',
+		color: 'skyblue',
 		description:
 			'I have gained a solid foundation in Java through my studies, where I’ve worked on various projects that helped deepen my understanding of the language. One of my key accomplishments is developing a multi-threaded, full-stack search engine in Java, which involved both front-end and back-end development. This project gave me hands-on experience with Java’s concurrency features and its ability to handle multiple tasks simultaneously, enhancing performance and scalability. Additionally, I’ve worked on several school projects that allowed me to apply Java in different contexts, strengthening my problem-solving skills and enhancing my ability to write clean, maintainable code.',
 		logo: Assets.Java,

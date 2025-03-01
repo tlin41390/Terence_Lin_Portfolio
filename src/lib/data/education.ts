@@ -1,30 +1,33 @@
 import Assets from './assets';
 import type { Education } from '../types';
 
+
 export const items: Array<Education> = [
 	{
 		degree: 'Bachelor degree of Computer Science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		location: 'San Francisco, CA',
+		logo: Assets.USFCA,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'USFCA',
+		color: 'green',
+		period: { from: new Date(2019, 7, 1), to: new Date(2023, 6, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: ['C', 'Algorithm', 'Python', 'Java','Operating Systems','Data Visualization', 'Computer Networks','Software Development']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Master degree of Computer Science',
 		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
+		color: 'red',
+		location: 'Santa Clara, CA',
+		logo: Assets.SCU,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'SCU',
+		period: { from: new Date(2025, 0, 6) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		subjects: ['Artificial Intelligence','Algorithm']
 	}
 ];
 
