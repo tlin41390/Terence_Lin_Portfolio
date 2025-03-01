@@ -1,6 +1,5 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -36,10 +35,29 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'python',
+		color: 'blue',
+		description:
+			'I have extensive experience with Python, using it for a variety of purposes. My work includes data processing, where I’ve utilized libraries like Pandas and NumPy to clean, manipulate, and analyze datasets. Additionally, I’ve worked on creating large language models (LLMs) and machine learning models, applying Python’s rich ecosystem of frameworks like TensorFlow and PyTorch. Beyond development, I also use Python for interview preparation, practicing algorithms and problem-solving skills with resources like LeetCode and HackerRank. Python’s versatility and readability make it an ideal language for both my professional and personal projects.',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'white',
+		description:
+			'I have gained a solid foundation in Java through my studies, where I’ve worked on various projects that helped deepen my understanding of the language. One of my key accomplishments is developing a multi-threaded, full-stack search engine in Java, which involved both front-end and back-end development. This project gave me hands-on experience with Java’s concurrency features and its ability to handle multiple tasks simultaneously, enhancing performance and scalability. Additionally, I’ve worked on several school projects that allowed me to apply Java in different contexts, strengthening my problem-solving skills and enhancing my ability to write clean, maintainable code.',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+
+	defineSkill({
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'I have extensive experience with JavaScript, CSS, and HTML, which I have used to build various web applications. One of my notable projects includes creating a GPU visualizer that tracks GPU stock and prices, giving me hands-on experience in developing dynamic and interactive web interfaces. These technologies have been foundational in my journey through web development, allowing me to create responsive, user-friendly applications.',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -48,7 +66,7 @@ export const items = [
 		slug: 'ts',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			`I have also gained significant experience with TypeScript, particularly in developing web applications. During my apprenticeship, I worked with TypeScript and React to build scalable and maintainable applications. One standout project was focused on helping Alzheimer's patients, where I used TypeScript, React, and Next.js to build a web app tailored to their needs. TypeScript's strong typing system enhanced the reliability and maintainability of the codebase in these projects`,
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
@@ -57,7 +75,7 @@ export const items = [
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'I have extensive experience with JavaScript, CSS, and HTML, which I have used to build various web applications. One of my notable projects includes creating a GPU visualizer that tracks GPU stock and prices, giving me hands-on experience in developing dynamic and interactive web interfaces. These technologies have been foundational in my journey through web development, allowing me to create responsive, user-friendly applications.',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -66,7 +84,7 @@ export const items = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'I have extensive experience with JavaScript, CSS, and HTML, which I have used to build various web applications. One of my notable projects includes creating a GPU visualizer that tracks GPU stock and prices, giving me hands-on experience in developing dynamic and interactive web interfaces. These technologies have been foundational in my journey through web development, allowing me to create responsive, user-friendly applications.',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
@@ -75,7 +93,7 @@ export const items = [
 		slug: 'sass',
 		color: 'pink',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'I have experience using Sass during my capstone project, which helped me take my CSS skills to the next level. Sass is a powerful CSS preprocessor that allowed me to write more efficient and maintainable stylesheets. By leveraging features like variables, nesting, mixins, and inheritance, I was able to streamline the design process and reduce code duplication. Compared to traditional CSS, Sass provides enhanced flexibility, modularity, and reusability, making it easier to manage complex stylesheets in larger projects. This experience taught me the advantages of using Sass to improve both productivity and scalability in web development.',
 		logo: Assets.Sass,
 		name: 'Sass',
 		category: 'markup-style'
@@ -84,7 +102,7 @@ export const items = [
 		slug: 'reactjs',
 		color: 'cyan',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'React has been a core tool in my web development journey, allowing me to create dynamic user interfaces with reusable components. I’ve used React extensively in various projects, including during my apprenticeship, where I worked on building complex web applications. My experience with React has given me a solid understanding of component-based architecture and state management	',
 		logo: Assets.ReactJs,
 		name: 'React Js',
 		category: 'library'
@@ -92,7 +110,7 @@ export const items = [
 	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
-		description: svelte,
+		description: `This website 😊`,
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
