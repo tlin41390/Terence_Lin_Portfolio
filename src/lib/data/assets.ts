@@ -10,6 +10,8 @@ const a = (light: string, dark?: string): Asset =>
 const Assets = {
 	AWS: a('aws.svg'),
 	USFCA: a('usfca_logo.png'),
+	BridgingTech: a('bridgingtech.png'),
+	SolarFi: a('solarfi.jpg'),
 	SCU: a('scu_logo.png'),
 	Bootstrap: a('bootstrap.svg'),
 	C: a('c.svg'),
@@ -28,6 +30,7 @@ const Assets = {
 	Rust: a('rust.svg', 'rust-dark.png'),
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
+	Supabase: a('supabase.png'),
 	Docker: a('docker.svg'),
 	Kubernetes: a('kubernetes.svg'),
 	Csharp: a('csharp.svg'),
