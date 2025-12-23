@@ -17,7 +17,7 @@ export const items: Array<Education> = [
 		subjects: ['C', 'Algorithm', 'Python', 'Java','Operating Systems','Data Visualization', 'Computer Networks','Software Development']
 	},
 	{
-		degree: 'Master degree of Computer Science',
+		degree: 'Master degree Information Systems',
 		description: '',
 		color: 'red',
 		location: 'Santa Clara, CA',
@@ -27,7 +27,7 @@ export const items: Array<Education> = [
 		period: { from: new Date(2025, 0, 6) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Artificial Intelligence','Algorithm']
+		subjects: ['Artificial Intelligence','Databases', 'Cloud Computing Architecture', 'Data Analytics', 'Strategy and Management']
 	}
 ];
 
