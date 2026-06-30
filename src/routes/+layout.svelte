@@ -1,6 +1,7 @@
 <script lang="ts">
 	import 'uno.css';
 	import NavMenu from '$lib/components/NavMenu/NavMenu.svelte';
+	import Chatbot from '$lib/components/Chatbot/Chatbot.svelte';
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
@@ -14,6 +15,7 @@
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>
+	<Chatbot />
 </div>
 
 <style lang="scss">
